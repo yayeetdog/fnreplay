@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>replay_fn</RootNamespace>
+    <ApplicationIcon>Favicon.ico</ApplicationIcon>
+    <AssemblyName>ReplayFN</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <StartupObject></StartupObject>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FNReplay.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FortniteReplayReader" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.8" />
+    <PackageReference Include="Pastel" Version="1.3.2" />
+  </ItemGroup>
+
+</Project>
